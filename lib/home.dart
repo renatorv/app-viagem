@@ -3,6 +3,7 @@ import 'package:teste/container_click.dart';
 import 'package:teste/container_inputs.dart';
 import 'package:teste/container_new.dart';
 import 'package:teste/container_viagem.dart';
+import 'package:teste/paleta_cores.dart';
 import 'package:teste/responsive.dart';
 
 class Home extends StatelessWidget {
@@ -15,7 +16,7 @@ class Home extends StatelessWidget {
       body: Stack(
         children: [
           Container(
-            color: Colors.grey,
+            color: PaletaCores.colorBackground, // Colors.grey,
             width: responsive.width,
             height: responsive.height,
             child: Column(
@@ -30,14 +31,10 @@ class Home extends StatelessWidget {
                     decoration: BoxDecoration(
                       image: DecorationImage(
                         colorFilter: ColorFilter.mode(
-                            Colors.black.withOpacity(0.3), BlendMode.dstATop),
-                        // colorFilter: ColorFilter.mode(
-                        //   Colors.black12.withOpacity(0.9),
-                        //   BlendMode.color,
-                        // ),
-                        image: const NetworkImage(
-                          "https://www.smartia.com.br/blog/wp-content/uploads/2018/12/como-funciona-o-seguro-para-bagagem.jpg",
+                          Colors.black.withOpacity(0.45),
+                          BlendMode.dstATop,
                         ),
+                        image: AssetImage('assets/viagem.jpeg'),
                         fit: BoxFit.fill,
                       ),
                     ),
@@ -50,28 +47,10 @@ class Home extends StatelessWidget {
                         ),
                       ],
                     ),
-                    // child: Stack(
-                    //   alignment: Alignment.center,
-                    //   children: [
-                    //     ClipPath(
-                    //       clipper: ClipHome(),
-                    //       child: Container(
-                    //         decoration: const BoxDecoration(
-                    //           gradient: LinearGradient(
-                    //             colors: [
-                    //               Color(0xFFF20F4B),
-                    //               Color(0xFFf02834),
-                    //             ],
-                    //           ),
-                    //         ),
-                    //       ),
-                    //     ),
-                    //   ],
-                    // ),
                   ),
                 ),
                 Container(
-                  color: Colors.grey,
+                  color: PaletaCores.colorBackground, // Colors.grey,
                   width: responsive.width,
                   height: responsive.height * .28,
                 ),
@@ -79,9 +58,9 @@ class Home extends StatelessWidget {
             ),
           ),
           Positioned(
-            top: responsive.hp(58),
-            left: responsive.wp(18),
-            right: responsive.wp(2),
+            top: responsive.hp(54),
+            left: responsive.wp(3),
+            right: responsive.wp(3),
             child: ContainerClick(),
           ),
           Positioned(

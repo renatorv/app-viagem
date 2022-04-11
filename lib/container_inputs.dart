@@ -22,12 +22,12 @@ class ContainerInputs extends StatelessWidget {
             border: UnderlineInputBorder(),
             labelText: 'Login',
             labelStyle: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontSize: responsive.dp(2.2),
               fontWeight: FontWeight.bold,
             ),
           ),
-          cursorColor: Colors.black26,
+          cursorColor: Colors.white,
         ),
         TextFormField(
           style: TextStyle(color: Colors.white, fontSize: responsive.dp(2.4)),
@@ -42,12 +42,12 @@ class ContainerInputs extends StatelessWidget {
             border: UnderlineInputBorder(),
             labelText: 'Senha',
             labelStyle: TextStyle(
-              color: Colors.black,
+              color: Colors.white,
               fontSize: responsive.dp(2.2),
               fontWeight: FontWeight.bold,
             ),
           ),
-          cursorColor: Colors.black26,
+          cursorColor: Colors.white,
         ),
       ],
     );
